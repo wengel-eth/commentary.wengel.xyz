@@ -1,2 +1,5 @@
 [build]
 	publish = "_site/"
+
+[dev]
+	framework = "eleventy"
