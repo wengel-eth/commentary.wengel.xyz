@@ -1,0 +1,15 @@
+{% macro c(verse, text, references) %}
+	<verse>{{ verse }}</verse>
+	<comments>
+		{% for comment in text %}
+			<comment>{{ comment }}</comment>
+		{% endfor %}
+	</comments>
+	<references>
+		{% for ref in references %}
+			<reference>{{ ref }}</reference>
+		{% endfor %}
+	</references>
+{% endmacro %}
+
+<!-- {{ comment.c(verse, [comments], [references]) }} -->

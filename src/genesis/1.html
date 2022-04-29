@@ -1,0 +1,14 @@
+---
+
+layout: layout.njk
+book: Genesis
+chapter: 1
+
+---
+
+{% import 'comment.njk' as comment%}
+
+{{ comment.c(1 ,[
+	'this',
+	'comment'
+], ['1 Corinthians 4:5']) }}
