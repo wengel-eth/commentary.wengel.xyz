@@ -1,0 +1,15 @@
+{% macro c(verse, text, references) %}
+<verse id="{{ verse }}">
+	<number>{{ verse }}</number>
+	<comments>
+		{% for comment in text %}
+			<comment>{{ comment }}</comment>
+		{% endfor %}
+	</comments>
+	<references>
+		{% for ref in references %}
+			<a href="/{{ ref | replace(' ', '/') | replace(':', '#') }}">{{ ref }}</a>
+		{% endfor %}
+	</references>
+</verse>
+{% endmacro %}

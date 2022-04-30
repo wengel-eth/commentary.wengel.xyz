@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.1",
+    "netlify-cli": "^2.37.0",
+    "nunjucks": "^3.2.3",
+    "webassembly": "^0.9.0"
+  }
+}
