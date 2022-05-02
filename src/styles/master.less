@@ -1,7 +1,12 @@
 
+body {
+	margin: 0;
+}
+
 .title {
-	padding: 32px;
+	padding: 24px;
 	text-align: center;
+	vertical-align: center;
 
 	strong {
 		font-size: 48px;
@@ -20,6 +25,7 @@
 		padding: 4px;
 		gap: 8px;
 		align-items: center;
+		text-align: justify;
 	}
 }
 
@@ -45,7 +51,7 @@ article {
 			min-width: 48px;
 			text-align: right;
 			font-weight: bold;
-			font-size: 20px;
+			font-size: 18px;
 		}
 
 		& comments {
@@ -57,14 +63,16 @@ article {
 				& b {
 					color: #c9211e;
 				}
-				margin-bottom: 4px;
+				margin-bottom: 8px;
+				text-align: justify;
+				font-size: 15px;
 			}
 		}
 
 		& references {
-			width: 160px;
+			min-width: 100px;
 			& a {
-
+				font-size: 12px;
 			}
 		}
 	}

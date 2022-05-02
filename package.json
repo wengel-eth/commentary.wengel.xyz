@@ -1,8 +1,26 @@
 {
-  "dependencies": {
-    "@11ty/eleventy": "^1.0.1",
-    "netlify-cli": "^2.37.0",
-    "nunjucks": "^3.2.3",
-    "webassembly": "^0.9.0"
-  }
+	"dependencies": {
+		"@11ty/eleventy": "^1.0.1",
+		"netlify-cli": "^2.37.0",
+		"nunjucks": "^3.2.3",
+		"webassembly": "^0.9.0"
+	},
+	"name": "commentary.wengel.xyz",
+	"version": "1.0.0",
+	"main": ".eleventy.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/wengel-eth/commentary.wengel.xyz.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/wengel-eth/commentary.wengel.xyz/issues"
+	},
+	"homepage": "https://github.com/wengel-eth/commentary.wengel.xyz#readme",
+	"description": ""
 }
