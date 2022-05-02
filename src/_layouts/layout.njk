@@ -9,6 +9,11 @@
 	</head>
 	<body>
 		<article>
+			<div class="title"><strong>{{ book }}</strong></div>
+			<div class="chapter">
+				<strong>Chapter {{ chapter }}</strong>
+				<div class="info">{% include 'info.svg' %} {{ info }}</div>
+			</div>
 			{{ content | safe }}
 		</article>
 	</body>
