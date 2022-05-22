@@ -8,7 +8,7 @@
 	</comments>
 	<references>
 		{% for ref in references %}
-			<a href="/{{ ref | replace(' ', '/') | replace(':', '#') }}">{{ ref }}</a>
+			<a href="/{{ ref | lower | replace(' ', '/') | replace(':', '#') }}">{{ ref }}</a>
 		{% endfor %}
 	</references>
 </verse>
