@@ -9,8 +9,11 @@
 		<script defer src="https://cdn.jsdelivr.net/npm/less@4/dist/less.min.js"></script>
 	</head>
 	<body>
+		<nav>
+			<a href="/">{% include 'home.svg' %}</a>
+		</nav>
 		<article>
-			<div class="title"><strong>{{ book }}</strong></div>
+			<div class="title"><strong><a href="/{{ book | lower }}">{{ book }}</a></strong></div>
 			<div class="chapter">
 				<strong>Chapter {{ chapter }}</strong>
 				<div class="info">{% include 'info.svg' %} <p>{{ info }}</p></div>

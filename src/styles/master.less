@@ -1,3 +1,7 @@
+:root {
+	--nav-icon: 48px;
+}
+
 *::selection {
 	background: wheat;
 }
@@ -6,15 +10,47 @@ body {
 	margin: 0;
 }
 
+nav {
+	height: var(--nav-icon);
+	display: flex;
+	z-index: 1;
+
+	a {
+		width: var(--nav-icon);
+		background: black;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		svg path {
+			fill: wheat;
+		}
+
+		&:hover {
+			background: wheat;
+
+			svg path {
+				fill: black;
+			}
+		}
+	}
+}
+
+a {
+	color: blue;
+}
+
 .chapters {
 	display: grid;
 	grid-template-columns: repeat(16, 1fr);
 	justify-items: center;
 	grid-gap: 8px;
+	padding: 0 16px;
 
 	a {
 		font-size: 24px;
 		font-weight: bold;
+		color: darkgoldenrod;
 	}
 }
 
@@ -37,6 +73,12 @@ body {
 	.ot {
 		text-align: right;
 	}
+
+	.ot, .nt {
+		a {
+			color: darkgoldenrod;
+		}
+	}
 }
 
 .title {
@@ -46,6 +88,10 @@ body {
 
 	strong {
 		font-size: 48px;
+
+		a {
+			color: black;
+		}
 	}
 }
 
@@ -63,9 +109,15 @@ body {
 		align-items: start;
 		text-align: justify;
 
+
 		svg {
 			flex-grow: 1;
-			margin-top: 1px;
+			width: 20px;
+			height: 20px;
+
+			path {
+				fill: black;
+			}
 		}
 
 		p {
@@ -78,7 +130,7 @@ body {
 article {
 	width: 100%;
 	max-width: 800px;
-	font-family: 'Bahnschrift', sans-serif;
+	font-family: 'Bahnschrift', 'Roboto', sans-serif;
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
@@ -90,7 +142,7 @@ article {
 		display: flex;
 
 		&:target {
-			outline: 2px solid lightgray;
+			background: seashell;
 		}
 
 		& > * {
