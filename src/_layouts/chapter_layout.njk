@@ -13,7 +13,7 @@
 			<div class="title"><strong>{{ book }}</strong></div>
 			<div class="chapter">
 				<strong>Chapter {{ chapter }}</strong>
-				<div class="info">{% include 'info.svg' %} {{ info }}</div>
+				<div class="info">{% include 'info.svg' %} <p>{{ info }}</p></div>
 			</div>
 			{{ content | safe }}
 		</article>
