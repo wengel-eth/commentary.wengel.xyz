@@ -1,2 +1,8 @@
 [build]
 	publish = "_site/"
+
+[[ redirects ]]
+	from = "/jude"
+	to = "/jude/1"
+	status = 200
+	force = true
