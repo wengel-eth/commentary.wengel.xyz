@@ -6,10 +6,14 @@
 			<comment>{{ comment }}</comment>
 		{% endfor %}
 	</comments>
-	<references>
-		{% for ref in references %}
-			<a href="/{{ ref | lower | replace(' ', '/') | replace(':', '#') }}">{{ ref }}</a>
-		{% endfor %}
-	</references>
+	{% if references[0] != '' %}
+		<references>
+			{% for ref in references %}
+				<a href="/{{ ref | lower | replace(' ', '/') | replace(':', '#') }}">{{ ref }}</a>
+			{% endfor %}
+		</references>
+	{% else %}
+		<references style="min-width:16px;"></references>
+	{% endif %}
 </verse>
 {% endmacro %}
