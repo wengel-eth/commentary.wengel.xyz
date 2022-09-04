@@ -1,3 +1,5 @@
+// lessc src/styles/master.less --clean-css master.css
+
 module.exports = function(eleventyConfig) {
 	eleventyConfig.setNunjucksEnvironmentOptions({
 		throwOnUndefined: true,
