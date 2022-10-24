@@ -1,0 +1,12 @@
+---
+
+layout: contents_layout.njk
+
+---
+
+<div class="title"><strong>Chapters</strong></div>
+<div class="chapters">
+	{% for chapter in range(6) %}
+	<a href="./{{ (chapter+1) }}">{{ (chapter+1) }}</a>
+	{% endfor %}
+</div>
